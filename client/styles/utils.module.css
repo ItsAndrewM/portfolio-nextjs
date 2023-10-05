@@ -1,0 +1,19 @@
+.greenText {
+  color: var(--green);
+}
+
+.whiteText {
+  color: white;
+}
+
+.width60 {
+  width: 60%;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.alignCenter {
+  align-items: center;
+}

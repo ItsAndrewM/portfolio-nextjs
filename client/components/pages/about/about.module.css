@@ -1,0 +1,21 @@
+.headshot {
+  border-radius: 50%;
+}
+
+.grid {
+  width: 100%;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
