@@ -8,15 +8,15 @@ const Bio = () => {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <p>
-            👋 Hello! I'm a full-stack web developer from Victoria, BC! My name
-            is
+            👋 Hello! I&apos;m a full-stack web developer from Victoria, BC! My
+            name is
           </p>
           <h1>Andrew McMillan</h1>
           <h1>I build things for the web.</h1>
         </div>
         <div className={styles.container}>
           <p>
-            I'm a Software Developer specializing in building full-stack
+            I&apos;m a Software Developer specializing in building full-stack
             e-commerce web applications.
           </p>
         </div>

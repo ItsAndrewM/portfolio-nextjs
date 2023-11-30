@@ -40,8 +40,8 @@ const About = () => {
               Next.js.
             </p>
             <p>
-              Here are a few technologies and frameworks I've been working with
-              recently:
+              Here are a few technologies and frameworks I&apos;ve been working
+              with recently:
             </p>
           </div>
           <div className={layoutStyles.container}>
