@@ -21,7 +21,11 @@ const Bio = () => {
           </p>
         </div>
         <div className={styles.container}>
-          <Button link={"/"} title={"Click or something"} />
+          <Button
+            link={"/Resume - Andrew.pdf"}
+            title={"Learn more about me"}
+            download={true}
+          />
         </div>
       </div>
     </section>

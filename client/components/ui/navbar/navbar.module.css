@@ -4,9 +4,15 @@
   justify-content: center;
   position: fixed;
   z-index: 1;
+  background-color: var(--darkBlue);
+  padding: 1em 0;
 }
 
-.navigation > ol {
+.listItem {
+  margin-left: 3em;
+}
+
+.list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +20,13 @@
   gap: 3em;
   list-style-type: decimal-leading-zero;
   list-style-position: outside;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .link {
@@ -46,4 +59,10 @@
 .active {
   color: var(--green);
   border-bottom: 1px solid var(--green);
+}
+
+.resume {
+  position: absolute;
+  right: 0;
+  margin-right: 2em;
 }
