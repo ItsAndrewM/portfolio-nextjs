@@ -27,17 +27,42 @@
   counter-increment: section 1;
   content: "0" counter(section) ". ";
 }
+.aboutMe::before {
+  counter-increment: section 1;
+}
 
-.headline::after {
+.aboutMe::after,
+.experience::after,
+.work::after,
+.contact::after {
   content: "";
   display: block;
   position: relative;
-  top: -16px;
-  width: 300px;
-  height: 1px;
-  margin-left: 250px;
+  top: -20px;
   background-color: var(--green);
   color: var(--green);
+  height: 1px;
+  width: 300px;
+}
+
+.experience::before {
+  counter-increment: section 2;
+}
+
+.work::before {
+  counter-increment: section 3;
+}
+
+.aboutMe::after {
+  margin-left: 250px;
+}
+
+.experience::after {
+  margin-left: 290px;
+}
+
+.work::after {
+  margin-left: 270px;
 }
 
 .container {
@@ -49,4 +74,36 @@
   align-items: flex-start;
   gap: 1em;
   flex-wrap: nowrap;
+}
+
+.shiny {
+}
+
+.shiny::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--y, 0) * 1px - 100px);
+  left: calc(var(--x, 0) * 1px - 100px);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(var(--green), var(--darkBlue) 70%);
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 50%;
+}
+
+.shiny:hover::after {
+  opacity: 0.1;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .headline {
+    width: 100%;
+  }
+
+  .headline::after {
+    width: 100px;
+    margin-left: 200px;
+  }
 }

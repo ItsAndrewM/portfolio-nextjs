@@ -1,7 +1,7 @@
 import Image from "next/image";
 import layoutStyles from "../../ui/layout/layout.module.css";
 import utilStyles from "@/styles/utils.module.css";
-import headshot from "@/assets/images/headshots/andrewHeadshot.jpg";
+import headshot from "@/public/images/headshots/andrewHeadshot.jpg";
 import styles from "./about.module.css";
 import { techStack } from "@/data/techStack";
 
@@ -11,7 +11,9 @@ const About = () => {
       <div className={styles.container}>
         <div className={layoutStyles.container}>
           <div className={layoutStyles.container}>
-            <h1 className={`${layoutStyles.headline} ${utilStyles.greenText}`}>
+            <h1
+              className={`${layoutStyles.headline} ${utilStyles.greenText} ${layoutStyles.aboutMe}`}
+            >
               About Me
             </h1>
           </div>
@@ -47,7 +49,11 @@ const About = () => {
           <div className={layoutStyles.container}>
             <ul className={styles.grid}>
               {techStack.map((tech) => {
-                return <li key={tech}>{tech}</li>;
+                return (
+                  <li key={tech}>
+                    <span className={styles.item}>{tech}</span>
+                  </li>
+                );
               })}
             </ul>
           </div>

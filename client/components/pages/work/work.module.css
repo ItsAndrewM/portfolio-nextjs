@@ -1,0 +1,35 @@
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.fixed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  gap: 1em;
+  height: 500px;
+  border: 1px solid red;
+  padding: 1em;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.scroll > li {
+  min-height: 300px;
+  border: 1px solid red;
+  padding: 2em;
+}
+
+.section {
+  max-height: 100vh;
+}

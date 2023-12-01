@@ -29,3 +29,10 @@
 .container h1:nth-of-type(2) {
   color: var(--green);
 }
+
+/* Mobile */
+@media (max-width: 700px) {
+  .buttonWrapper {
+    align-items: center;
+  }
+}

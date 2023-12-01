@@ -1,6 +1,7 @@
 import Button from "@/components/blocks/button/button";
 import styles from "./bio.module.css";
 import layoutStyles from "../../ui/layout/layout.module.css";
+import Head from "next/head";
 
 const Bio = () => {
   return (
@@ -20,7 +21,7 @@ const Bio = () => {
             e-commerce web applications.
           </p>
         </div>
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles.buttonWrapper}`}>
           <Button
             link={"/Resume - Andrew.pdf"}
             title={"Learn more about me"}
