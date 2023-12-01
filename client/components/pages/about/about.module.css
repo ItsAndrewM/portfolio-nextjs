@@ -26,6 +26,7 @@
 }
 
 .item {
+  cursor: default;
   padding: 0.75rem;
   color: var(--green);
   background-color: var(--blue);
