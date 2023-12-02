@@ -29,7 +29,7 @@ const Work = () => {
                 <h2 className={styles.headline}>Freelance Projects</h2>
                 {freelance.map((val) => {
                   return (
-                    <li>
+                    <li key={val.id}>
                       <Link
                         href={val.link}
                         className={
@@ -46,7 +46,7 @@ const Work = () => {
                 <h2 className={styles.headline}>Work Projects</h2>
                 {work.map((val) => {
                   return (
-                    <li>
+                    <li key={val.id}>
                       <Link
                         href={val.link}
                         className={
@@ -115,7 +115,7 @@ const Work = () => {
                       <ul className={aboutStyles.grid}>
                         {val.tech.map((e) => {
                           return (
-                            <li>
+                            <li key={e}>
                               <span className={aboutStyles.item}>{e}</span>
                             </li>
                           );
