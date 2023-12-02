@@ -84,7 +84,7 @@ const Work = () => {
                       <ul className={aboutStyles.grid}>
                         {val.tech.map((e) => {
                           return (
-                            <li>
+                            <li key={e}>
                               <span className={aboutStyles.item}>{e}</span>
                             </li>
                           );
