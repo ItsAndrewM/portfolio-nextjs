@@ -54,3 +54,13 @@
   color: white;
   margin-top: 0.5em;
 }
+
+@media (max-width: 700px) {
+  .grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .scroll {
+    padding: 0;
+  }
+}

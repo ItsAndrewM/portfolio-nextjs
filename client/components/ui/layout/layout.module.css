@@ -101,7 +101,10 @@
   }
 
   .headline::after {
-    width: 100px;
-    margin-left: 200px;
+    display: none;
+  }
+
+  .experience::after {
+    margin-left: 230px;
   }
 }
