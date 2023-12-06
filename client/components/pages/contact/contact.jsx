@@ -69,7 +69,7 @@ const Contact = () => {
               </p>
               <div className={styles.textWrapper}>
                 <p>
-                  I'm actively looking for{" "}
+                  I&apos;m actively looking for{" "}
                   <span className={styles.highlight}>new oppurtunites</span> and{" "}
                   <span className={styles.highlight}>new projects.</span>
                 </p>
