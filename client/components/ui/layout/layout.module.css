@@ -98,8 +98,14 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .main {
+    gap: 5em;
+  }
+  .section {
+  }
   .headline {
     width: 100%;
+    text-align: center;
   }
 
   .headline::after {

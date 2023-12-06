@@ -73,5 +73,7 @@
   }
   .scroll {
     padding: 0;
+    border: 2px solid rgba(var(--card-rgb), 0.1);
+    border-radius: var(--border-radius);
   }
 }

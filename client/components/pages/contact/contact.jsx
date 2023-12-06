@@ -191,6 +191,7 @@ const Contact = () => {
                     type="submit"
                     name="submit"
                     placeholder="Submit"
+                    value={"Submit"}
                     required
                     className={buttonStyles.button}
                   />

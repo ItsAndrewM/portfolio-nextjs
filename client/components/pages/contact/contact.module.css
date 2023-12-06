@@ -212,4 +212,8 @@
   .row {
     flex-direction: column;
   }
+
+  .reach {
+    flex-wrap: wrap;
+  }
 }
