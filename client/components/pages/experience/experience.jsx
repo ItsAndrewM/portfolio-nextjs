@@ -2,9 +2,10 @@ import aboutStyles from "../about/about.module.css";
 import layoutStyles from "@/components/ui/layout/layout.module.css";
 import utilStyles from "@/styles/utils.module.css";
 import styles from "./experience.module.css";
-import headshot from "@/public/images/headshots/andrewHeadshot.jpg";
+import workStyles from "../work/work.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import contactStyles from "../contact/contact.module.css";
 const Experience = () => {
   return (
     <section id="experience" className={layoutStyles.section}>
@@ -20,9 +21,13 @@ const Experience = () => {
           <div className={layoutStyles.container}>
             <div className={styles.wrapper}>
               <div className={styles.box}>
-                <h2>Software Developer - Precision Sail Loft</h2>
+                <h2 className={workStyles.headline}>
+                  Software Developer - Precision Sail Loft
+                </h2>
                 <p className={`${utilStyles.upperCase} ${styles.date}`}>
-                  <span>January 2023 - PRESENT</span>
+                  <span className={contactStyles.highlight}>
+                    January 2023 - PRESENT
+                  </span>
                 </p>
                 <ul>
                   <li>

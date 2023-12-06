@@ -7,6 +7,10 @@
   border-radius: 5px;
 }
 
+.formGroup textarea {
+  height: 10em;
+}
+
 .formGroup select {
   text-indent: 10px;
 }
@@ -67,7 +71,7 @@
 .formField {
   font-family: inherit;
   width: 100%;
-  border: 2px solid rgba(var(--card-rgb), 0.1);
+  border: 2px solid var(--green);
   /* border-bottom: 2px solid #9b9b9b; */
   outline: 0;
   font-size: 1.3rem;
@@ -114,7 +118,7 @@
 }
 
 .formField:focus {
-  border: 2px solid rgba(var(--card-rgb), 0.1);
+  border: 2px solid var(--green);
 }
 
 .formGroup {
@@ -142,6 +146,66 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.formButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formButton > input[type="submit"] {
+  width: 100%;
+  margin-top: 1em;
+  transition: all 0.7s;
+}
+
+.formButton > input[type="submit"]:hover {
+  color: var(--darkBlue);
+  box-shadow: inset 1050px 0 0 0 var(--green);
+}
+
+.error {
+  padding: 1em;
+  display: flex;
+  font-size: 12px;
+  color: var(--green);
+  line-height: 1.2;
+  height: 14.4px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > p,
+.container > h2 {
+  text-align: center;
+}
+
+.highlight {
+  color: var(--green);
+}
+
+.textWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.textWrapper > p,
+.textWrapper > h2 {
+  text-align: center;
+}
+
+.reach {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 700px) {

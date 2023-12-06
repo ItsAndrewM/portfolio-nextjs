@@ -21,6 +21,8 @@
 .headline {
   font-size: clamp(26px, 5vw, var(--font-lg));
   vertical-align: baseline;
+  width: 100%;
+  max-width: 100%;
 }
 
 .headline::before {
@@ -46,7 +48,6 @@
   background-color: var(--green);
   color: var(--green);
   height: 1px;
-  width: 100%;
 }
 
 .experience::before {
@@ -60,6 +61,7 @@
 .aboutMe::after,
 .work::after,
 .contact::after {
+  max-width: 100%;
   margin-left: 250px;
 }
 

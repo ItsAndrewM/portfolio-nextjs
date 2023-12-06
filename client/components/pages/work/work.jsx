@@ -9,12 +9,26 @@ import { freelance } from "@/data/freelance";
 import { work } from "@/data/work";
 import homeStyles from "@/styles/Home.module.css";
 import Chain from "@/assets/icons/chain";
+import ScrollItem from "@/components/blocks/scrollItem/scrollItem";
+import { createRef, useEffect, useMemo, useState } from "react";
 
 const Work = () => {
   const router = useRouter();
+
+  const refsById = useMemo(() => {
+    const refs = {};
+    work.forEach((item) => {
+      refs[item.id] = createRef(null);
+    });
+    freelance.forEach((item) => {
+      refs[item.id] = createRef(null);
+    });
+    return refs;
+  }, [work]);
+
   return (
     <section id="work" className={`${styles.section} ${layoutStyles.section}`}>
-      <div className={aboutStyles.container}>
+      <div className={`${styles.window} ${aboutStyles.container}`}>
         <div className={layoutStyles.container}>
           <div className={layoutStyles.container}>
             <h1
@@ -30,16 +44,31 @@ const Work = () => {
                 {freelance.map((val) => {
                   return (
                     <li key={val.id}>
-                      <Link
-                        href={val.link}
-                        className={
-                          router.asPath.includes(val.link)
+                      <button
+                        className={`${styles.button} ${
+                          router.query.target === val.id
                             ? navbarStyles.active
                             : navbarStyles.link
-                        }
+                        }`}
+                        name={val.id}
+                        onClick={(e) => {
+                          router.push(
+                            {
+                              query: { target: val.id },
+                            },
+                            undefined,
+                            {
+                              scroll: false,
+                            }
+                          );
+                          refsById[e.target.name].current.scrollIntoView({
+                            behavior: "smooth",
+                            block: "nearest",
+                          });
+                        }}
                       >
                         {val.name}
-                      </Link>
+                      </button>
                     </li>
                   );
                 })}
@@ -47,28 +76,43 @@ const Work = () => {
                 {work.map((val) => {
                   return (
                     <li key={val.id}>
-                      <Link
-                        href={val.link}
-                        className={
-                          router.asPath.includes(val.link)
+                      <button
+                        className={`${styles.button} ${
+                          router.query.target === val.id
                             ? navbarStyles.active
                             : navbarStyles.link
-                        }
+                        }`}
+                        name={val.id}
+                        onClick={(e) => {
+                          router.push(
+                            {
+                              query: { target: val.id },
+                            },
+                            undefined,
+                            {
+                              scroll: false,
+                            }
+                          );
+                          refsById[e.target.name].current.scrollIntoView({
+                            behavior: "smooth",
+                            block: "nearest",
+                          });
+                        }}
                       >
                         {val.name}
-                      </Link>
+                      </button>
                     </li>
                   );
                 })}
               </ul>
               <ul className={styles.scroll}>
-                {work.map((val) => {
+                {freelance.map((val) => {
                   return (
                     <li
                       key={val.id}
-                      id={val.id}
+                      ref={refsById[val.id]}
                       className={`${
-                        router.asPath.includes(val.link) && homeStyles.active
+                        router.query.target === val.id && homeStyles.active
                       } ${homeStyles.card}`}
                     >
                       <h3>{val.name}</h3>
@@ -93,13 +137,14 @@ const Work = () => {
                     </li>
                   );
                 })}
-                {freelance.map((val) => {
+                {work.map((val) => {
                   return (
+                    // <ScrollItem val={val} key={val.id} />
                     <li
                       key={val.id}
-                      id={val.id}
+                      ref={refsById[val.id]}
                       className={`${
-                        router.asPath.includes(val.link) && homeStyles.active
+                        router.query.target === val.idcon && homeStyles.active
                       } ${homeStyles.card}`}
                     >
                       <h3>{val.name}</h3>

@@ -1,5 +1,4 @@
 import { navigationLinks } from "@/data/navigationLinks";
-import layoutStyles from "../layout/layout.module.css";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { useRef } from "react";
@@ -8,7 +7,6 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const headerRef = useRef();
   const router = useRouter();
-  console.log(router);
   const handleMouseMove = (e) => {
     const { x, y } = headerRef.current.getBoundingClientRect();
     headerRef.current.style.setProperty("--x", e.clientX - x);
@@ -42,7 +40,7 @@ const Navbar = () => {
         <Link
           href={"/Resume - Andrew.pdf"}
           download
-          className={`${styles.link} ${styles.resume}`}
+          className={`${styles.resume} `}
         >
           Resume
         </Link>

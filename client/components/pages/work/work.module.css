@@ -30,7 +30,15 @@
 }
 
 .section {
-  max-height: 100vh;
+  height: 100vh;
+}
+
+.button {
+  background-color: inherit;
+  border: none;
+  /* color: inherit; */
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .icon {
@@ -53,6 +61,9 @@
 .headline {
   color: white;
   margin-top: 0.5em;
+}
+
+.window {
 }
 
 @media (max-width: 700px) {

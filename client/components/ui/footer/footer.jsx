@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import styles from "./footer.module.css";
 import layoutStyles from "../layout/layout.module.css";
+import Github from "@/assets/icons/github";
+import Link from "next/link";
 
 const Footer = () => {
   const footerRef = useRef();
@@ -11,10 +13,15 @@ const Footer = () => {
   };
   return (
     <footer
-    // ref={footerRef}
-    // onMouseMove={handleMouseMove}
+      // ref={footerRef}
+      // onMouseMove={handleMouseMove}
+      className={styles.footer}
     >
-      This is the footer
+      <div className={styles.icon}>
+        <Link href={"https://github.com/itsandrewm"}>
+          <Github />
+        </Link>
+      </div>
     </footer>
   );
 };
