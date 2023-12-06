@@ -75,12 +75,12 @@ const Contact = () => {
                 </p>
                 <p>
                   {" "}
-                  Have a cool idea but don't know how to get it done?{" "}
+                  Have a cool idea but don&apos;t know how to get it done?{" "}
                   <span className={styles.highlight}>Message me!</span>
                 </p>
                 <p>
                   Looking for a web developer to fill out a full-time role?{" "}
-                  <span className={styles.highlight}>I'm available.</span>
+                  <span className={styles.highlight}>I&apos;m available.</span>
                 </p>
                 <p>
                   Also a fan of containers that scroll?{" "}
