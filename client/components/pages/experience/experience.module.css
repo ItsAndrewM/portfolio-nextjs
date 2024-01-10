@@ -4,7 +4,11 @@
   flex-direction: column;
   gap: 1em;
   /* display: grid;
+<<<<<<< HEAD
     grid-template-columns: 40% 60%; */
+=======
+  grid-template-columns: 40% 60%; */
+>>>>>>> 1f9bcab394ef087d14d4b505efb541b980cf2b29
 }
 
 .date {
