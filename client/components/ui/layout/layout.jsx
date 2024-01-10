@@ -24,14 +24,20 @@ const Layout = ({ children }) => {
         <meta name="description" content={site_description} />
         <meta property="og:title" content={site_title} />
         <meta property="og:description" content={site_description} />
-        <meta property="og:image" content={"/images/og_image.png"} />
+        <meta
+          property="og:image"
+          content={"https://andrewrmcmillan.com/images/og_image.png"}
+        />
         <meta property="og:url" content={"https://andrewrmcmillan.com"} />
         <meta property="og:type" content="profile" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={site_title} />
         <meta name="twitter:site" content="@itsAndrew_dev" />
         <meta name="twitter:description" content={site_description} />
-        <meta name="twitter:image" content={"/images/og_image.png"} />
+        <meta
+          name="twitter:image"
+          content={"https://andrewrmcmillan.com/images/og_image.png"}
+        />
         <link rel="canonical" href={"https://andrewrmcmillan.com"} />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
