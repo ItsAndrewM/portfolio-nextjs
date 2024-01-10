@@ -47,16 +47,15 @@
 }
 
 .card {
-  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+  padding: 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
 }
 
 .card h2 {
@@ -64,12 +63,17 @@
   margin-bottom: 0.7rem;
 }
 
+.card h3,
+.card p {
+  cursor: default;
+}
+
 .card p {
   margin: 0;
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
-  max-width: 30ch;
+  width: 100%;
 }
 
 .center {
@@ -97,7 +101,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -107,21 +111,21 @@
 .logo {
   position: relative;
 }
+
+.section {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.active {
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
   }
 }
 
@@ -139,7 +143,7 @@
   }
 
   .card {
-    padding: 1rem 2.5rem;
+    /* padding: 1rem 2.5rem; */
   }
 
   .card h2 {

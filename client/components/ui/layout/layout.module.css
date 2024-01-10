@@ -11,7 +11,7 @@
 .section {
   padding: 0 2em;
   width: 100%;
-  max-width: 900px;
+  max-width: var(--max-width);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,23 +21,52 @@
 .headline {
   font-size: clamp(26px, 5vw, var(--font-lg));
   vertical-align: baseline;
+  width: 100%;
+  max-width: 100%;
 }
 
 .headline::before {
   counter-increment: section 1;
   content: "0" counter(section) ". ";
 }
+.aboutMe::before {
+  counter-increment: section 2;
+}
 
-.headline::after {
+.contact::before {
+  counter-increment: section 5;
+}
+
+.aboutMe::after,
+.experience::after,
+.work::after,
+.contact::after {
   content: "";
   display: block;
   position: relative;
-  top: -16px;
-  width: 300px;
-  height: 1px;
-  margin-left: 250px;
+  top: -20px;
   background-color: var(--green);
   color: var(--green);
+  height: 1px;
+}
+
+.experience::before {
+  counter-increment: section 3;
+}
+
+.work::before {
+  counter-increment: section 4;
+}
+
+.aboutMe::after,
+.work::after,
+.contact::after {
+  max-width: 100%;
+  margin-left: 250px;
+}
+
+.experience::after {
+  margin-left: 290px;
 }
 
 .container {
@@ -49,4 +78,41 @@
   align-items: flex-start;
   gap: 1em;
   flex-wrap: nowrap;
+}
+.shiny::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--y, 0) * 1px - 100px);
+  left: calc(var(--x, 0) * 1px - 100px);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(var(--green), var(--darkBlue) 70%);
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 50%;
+}
+
+.shiny:hover::after {
+  opacity: 0.1;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main {
+    gap: 5em;
+  }
+  .section {
+  }
+  .headline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .headline::after {
+    display: none;
+  }
+
+  .experience::after {
+    margin-left: 230px;
+  }
 }

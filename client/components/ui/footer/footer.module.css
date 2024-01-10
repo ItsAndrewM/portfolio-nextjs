@@ -1,0 +1,23 @@
+.icon {
+  width: 40px;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  color: var(--green);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}

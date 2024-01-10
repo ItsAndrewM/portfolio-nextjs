@@ -17,3 +17,7 @@
 .alignCenter {
   align-items: center;
 }
+
+.upperCase {
+  text-transform: uppercase;
+}
