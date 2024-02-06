@@ -52,10 +52,7 @@ const About = () => {
               showcases my capability to tackle challenging projects and deliver
               exceptional results. I&apos;m not just about meeting requirements;
               I aim to push boundaries and establish new benchmarks in digital
-              solutions. With my successful project history and continuous
-              pursuit of technological advancements, I offer a unique mix of
-              expertise, creativity, and strategic insight to any
-              forward-thinking team.
+              solutions.
               {/* I also have a passion for game development
               and have created several Java applications using Spring. I&apos;m
               always eager to learn new technologies and frameworks, and
