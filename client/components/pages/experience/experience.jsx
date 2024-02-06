@@ -46,13 +46,6 @@ const Experience = () => {
                     and unstructured data management.
                   </li>
                   <li>
-                    {/* Used Google APIs and services, Google Cloud, and SEO tools.{" "} */}
-                    Led the creation of five diverse websites, including
-                    Precisioncruisingaccessories.com and CDI Furlers, utilizing
-                    WooCommerce, Next.js, and custom API endpoints for product
-                    and content management.
-                  </li>{" "}
-                  <li>
                     {/* Hosted web apps and websites on Kinsta, Render, Vercel, and
                     Netlify. */}
                     Integrated advanced analytical tools (Google Analytics,
@@ -75,20 +68,6 @@ const Experience = () => {
                     Administered hosting and deployment on platforms like
                     Kinsta, Render, Vercel, Netlify, ensuring high availability
                     and reliable access.
-                  </li>
-                  <li>
-                    Utilized Express.js and Tailwind CSS for crafting
-                    responsive, user-friendly interfaces, and managed
-                    cloud-based data on Google Cloud (BigQuery, Firestore).
-                  </li>
-                  <li>
-                    Conducted system backups and staged deployments, maintaining
-                    system integrity and operational continuity.
-                  </li>
-                  <li>
-                    As the sole developer, crafted innovative features like a
-                    product quiz for personalized recommendations, enhancing
-                    user experience and e-commerce efficiency.
                   </li>
                 </ul>
               </div>
