@@ -30,7 +30,7 @@ export const work = [
     link: "/#cdi-furlers",
     id: "cdi-furlers",
     description:
-      "Developed and enhanced a react/woocommerce web app for CDI Furlers, a company that manufactures and sells innovative furling systems for sailboats. The web app allows customers to learn about the benefits, features, and specifications of each furler model, as well as view installation and maintenance videos. The web app also features a dealer locator, a contact form, and a FAQ section. The web app is sleek, fast, and easy to navigate. Utilized skills in web development, UI design, and video editing.",
+      "For CDI Furlers, a leading manufacturer of innovative furling systems for sailboats, I developed an advanced e-commerce website using Next.js and WooCommerce. This project involved designing a headless architecture that emphasized scalability and a dynamic display of products, tailored to the evolving needs of modern e-commerce. The website's user interface was meticulously crafted using V0.dev, which utilizes Radix Components and Tailwind CSS, ensuring a seamless and engaging user experience.",
     tech: [
       "React",
       "Woocommerce",

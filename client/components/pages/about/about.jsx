@@ -19,27 +19,48 @@ const About = () => {
           </div>
           <div className={layoutStyles.container}>
             <p>
-              Hello! My name is Andrew McMillan and I love programming and
+              {/* Hello! My name is Andrew McMillan and I love programming and
               creating things. I&apos;m a software developer for Precision Sail
               Loft, where I develop e-commerce web applications for the marine
               industry. I enjoy building interesting, fun, fast and unique
               client and customer experiences for an industry that hasn&apos;t
-              seen a technological shift since radar was invented.
+              seen a technological shift since radar was invented.  */}
+              Hello! I&apos;m Andrew McMillan, a dedicated software developer at
+              Precision Sail Loft, where I specialize in creating cutting-edge
+              e-commerce web applications for the marine industry. My passion
+              for programming goes beyond just writing code; I&apos;m committed
+              to developing unique, efficient, and engaging online experiences
+              in a field that&apos;s ripe for technological advancement.
+              Alongside my professional work, I have a keen interest in game
+              development and continuously explore new technologies, recently
+              delving into React Server Components and Next.js.
             </p>
             {/* <p>
-              Fast-forward to today and I'm a software developer for Precision
-              Sail Loft where I've been lucky enough to develop a variety of
+              Fast-forward to today and I&apos;m a software developer for Precision
+              Sail Loft where I&apos;ve been lucky enough to develop a variety of
               e-commerce web applications for the marine industry. My main focus
               these days is building interesting, fun, fast and unique client
-              and customer experiences for an industry that hasn't seen a
+              and customer experiences for an industry that hasn&apos;t seen a
               technological shift since radar was invented.
             </p> */}
             <p>
-              I also have a passion for game development and have created
-              several Java applications using Spring. I&apos;m always eager to
-              learn new technologies and frameworks, and recently I&apos;ve been
-              working on some projects using React Server Components and
-              Next.js.
+              My approach to software development is anchored in the belief that
+              technology is a pivotal tool for solving real-world problems and
+              enhancing user experiences. I thrive in innovative, adaptable
+              environments that prioritize a user-centric approach. My proven
+              track record in leading complex e-commerce site development
+              showcases my capability to tackle challenging projects and deliver
+              exceptional results. I&apos;m not just about meeting requirements;
+              I aim to push boundaries and establish new benchmarks in digital
+              solutions. With my successful project history and continuous
+              pursuit of technological advancements, I offer a unique mix of
+              expertise, creativity, and strategic insight to any
+              forward-thinking team.
+              {/* I also have a passion for game development
+              and have created several Java applications using Spring. I&apos;m
+              always eager to learn new technologies and frameworks, and
+              recently I&apos;ve been working on some projects using React
+              Server Components and Next.js. */}
             </p>
             <p>
               Here are a few technologies and frameworks I&apos;ve been working
