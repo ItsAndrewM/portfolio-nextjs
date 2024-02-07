@@ -25,17 +25,17 @@ Before you begin, ensure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/ItsAndrewM/portfolio-nextjs.git
-   ```
+```
+git clone https://github.com/ItsAndrewM/portfolio-nextjs.git
+```
 2.  Navigate to the `/client` directory:
-   ```
-   cd portfolio-nextjs/client
-   ```
+```
+cd portfolio-nextjs/client
+```
 3. Install the dependencies:
-   ```
-   yarn install
-   ```
+```
+yarn install
+```
 ### Running the Application
 
 To run the application in development mode, execute:
